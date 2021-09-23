@@ -39,7 +39,7 @@ function App() {
       .then(result => {
         setLocation(result)
       });
-      setCenter([lng, lat])
+      map.current.setCenter([lng, lat])
   });
 
   const update = () => {
